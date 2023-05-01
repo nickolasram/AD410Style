@@ -74,5 +74,5 @@ I've tried to leave the look of the website untouched so far with one exception-
 
 ## **NEXT STEPS**
 1. I need to finish writing "patch notes" for the rest of the pages I've done then test/update a few more pages/questions.
-2. Once we have a comprehensive list of all the types of changes we want to change (e.g. replacing all occurences of em with b.highlight2), we might be able to update all the questions with a python script.
+2. Once we have a comprehensive list of all the tags, classes, and IDs we want to change (e.g. replacing all occurences of em with b.highlight2), we might be able to update all the questions with a python script.
 3. If we can fit it within the scope of the project, we can start some basic styling and add more responsiveness
