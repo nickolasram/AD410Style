@@ -1,4 +1,4 @@
-const pages = ['home', 'A000-A000-1a14-0'];
+const pages = ['home', 'A000-A000-1A14-0'];
 const folders = ['formatted','raw', 'revised']
 const $ = x => {
     return document.getElementById(x);
