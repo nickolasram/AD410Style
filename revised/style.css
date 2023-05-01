@@ -1,0 +1,210 @@
+:root{
+    /* Typography */
+    --heading: green;
+    --text-standard: 1rem;
+    /* general styling */
+    --body-back: #f0f0f0;
+    --content-back: white;
+    --accent-outline: black;
+    --border-width: 3px;
+    --standard-margin: 1.5em;
+    --button-primary: white;
+    --highlight-primary: red;
+    --highlight-secondary: blue;
+    --highlight-tertiary: green;
+    --code-back: lightyellow;
+    --flex-gap: 2rem;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* ==================
+    Typography
+===================== */
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, 
+em, button,
+strong{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1, h2 {
+    color: var(--heading);
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    background-color: var(--code-back);
+}
+button {
+    font-size: 1rem;
+}
+#feedback {
+    color: var(--highlight-primary);
+}
+.text-block{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.ci4 {
+    text-indent: 2em;
+}
+.ci8 {
+    text-indent: 4em;
+}
+.ci12 {
+    text-indent: 6em;
+}
+.code {
+    background-color: var(--code-back);
+    text-align: left; 
+}
+.code p{
+    margin-top: 0;
+}
+.underline {
+    text-decoration: underline;
+}
+.highlight1 {
+    color: var(--highlight-primary)
+}
+.highlight2{
+    color: var(--highlight-secondary)
+}
+.qcanswer {
+    color: red;
+    font-weight: bold;
+    background-color: gray;
+}
+.ui {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: darkcyan;
+    background-color: magenta;
+}
+/* ==================
+    General layout
+===================== */
+body{
+    background-color: var(--body-back);
+}
+img {
+    max-width: 100%;
+}
+button {
+    padding-inline: 1.25em;
+    padding-block: .625em;
+    margin: .625rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--flex-gap);
+    margin-block: var(--standard-margin);
+}
+label{
+    display: inline-block;
+    min-width: 20ch;
+    /* text-align: right; */
+}
+input{
+    padding: calc(.25*var(--text-standard));
+}
+select,
+input{
+    width: 25ch;
+}
+.wrapper,
+.wrapper_shadow,
+.wrapper_border {
+    min-width: 800px;
+    max-width: 1000px;
+    min-height: 100svh;
+    max-height: fit-content;
+    margin: 0 auto;
+    background: var(--content-back);
+    padding: 2rem;
+}
+.wrapper_shadow{
+    filter: drop-shadow(0 0 0.25rem slategray);
+}
+.wrapper_border{
+    border-inline: 2px solid var(--accent-outline);
+}
+.flex_container{
+    display: flex;
+    flex-direction: column;
+}
+.centercenter{
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    padding: 40px;
+    text-align: center;
+}
+.border_primary{
+    border: var(--border-width) solid var(--accent-outline);
+}
+.item {
+    display: flex;
+    justify-content: center;
+}
+p, .image,
+.code{
+    margin-top: var(--standard-margin);
+}
+.image{
+    padding: .5rem;
+    background-color: gray;
+    text-align: center;
+    width: fit-content;
+}
+.image img{
+    vertical-align: middle;
+}
+.dropdown{
+    margin-right: 20px;
+    margin-top: 27px;
+    margin-left: 20px;
+    margin-bottom: 28px;
+}
+.course {
+    display: flex;
+    border-style: solid;
+}
+.course p {
+    margin-left: 20px;
+}
+/* #Questions {
+    margin: 20px;
+} */
+table, th, td {
+    border: 1px solid;
+}
+.start_culture {
+    background-color: yellow;
+    font-weight: bold;
+    margin-bottom: 1em
+}
+#explanation {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        /* min-width: 400px; */
+        max-width: 100vw;
+    }
+    .wrapper_border{
+        border-inline: none;
+    }
+}

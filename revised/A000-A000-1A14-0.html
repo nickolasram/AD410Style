@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://atcsed.us-west-2.elasticbeanstalk.com/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://atcsed.us-west-2.elasticbeanstalk.com/logo192.png">
+    <link rel="manifest" href="http://atcsed.us-west-2.elasticbeanstalk.com/manifest.json">
+    <title>Cultural CS Bytes</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+    <div id="root">
+        <div class="wrapper_border">
+            <div class="banner border_primary">
+                <h1>Question 9 of 20</h1>
+            </div>
+            <button>Back to Courses</button>
+            <div>
+                <p><b class="highlight1">Jude</b> is writing a program to find the coldest temperature in the previous year.  <b class="highlight1">Jude</b> has a list of the low temperature for each day that looks as follows:</p>
+                <section class="code">
+                    <p class="ci8 clumped"><code>23.5</code></p>
+                    <p class="ci8 clumped"><code>21.7</code></p>
+                    <p class="ci8 clumped"><code>43.0</code></p>
+                    <p class="ci8 clumped"><code>…</code></p>
+                    <p class="ci8 clumped"><code>…</code></p>
+                    <p class="ci8 clumped"><code>35.9</code></p>
+                </section>
+                <p>The original program runs but gives the wrong answer:</p>
+                <figure class="image">
+                    <img id="qimg0" src="../images/1A14.png">
+                </figure>
+                <p>What change should <b class="highlight1">Jude</b> make to fix the program and output the coldest temperature?</p>
+                </div>
+                <div class="Answer">
+                    <button id="1" style="background-color: var(--button-primary);">Modify line 4:<code> if dayCold &gt; maxCold</code></button>
+                </div>
+                <div class="Answer">
+                    <button id="2" style="background-color: var(--button-primary);">Modify line 4:<code> if dayCold = maxCold</code></button>
+                </div>
+                <div class="Answer">
+                    <button id="3" style="background-color: var(--button-primary);">Modify line 5:<code> dayCold = maxCold</code></button>
+                </div>
+                <div class="Answer">
+                    <button id="4" style="background-color: var(--button-primary);">Modify line 1:<code> number maxCold = 1000.0</code></button>
+                </div>
+                <div id="explanation" style="display: none;">
+                    <p>Because <b class="highlight2">maxCold</b> is set so low in line 1, line 4 is never true and <b class="highlight2">maxCold</b> will always be -1000.0.   By modifying line 1 to <code>maxCold = 1000.0</code> - higher than any expected value, the first value read from the list will become the initial <b class="highlight2">maxCold</b> and the program will work as expected.</p>
+                </div>
+                <button>Next</button>
+            </div>
+        </div>
+</body>
+</html>
