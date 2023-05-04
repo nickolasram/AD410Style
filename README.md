@@ -89,6 +89,7 @@ I've tried to leave the look of the website untouched so far with one exception-
     6. metric.js
     7. metrics.js
     8. recommendations.js
+    9. about.js
 2. Create a version "1.5" css file that is compatible with the new styling as well as the old styling, then replace the existing css files with this one.
 3. Maybe finish writing a revised css scheme for other questions IF given the go-ahead as this is starting to affect the backend which is not in the original scope of our project (optional step.)
 4. If time permits, we can start some basic styling and add more responsiveness
