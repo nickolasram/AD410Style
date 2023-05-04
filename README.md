@@ -61,6 +61,12 @@ I've tried to leave the look of the website untouched so far with one exception-
     - replace occurances of `.style.backgroundColor = "green";` with `.style.backgroundColor = "var(--highlight-tertiary)";`
     - replace occurances of `.style.backgroundColor = "red";` with `.style.backgroundColor = "var(--highlight-primary)";`
     - replace occurances of `.style.backgroundColor = "white";` with `.style.backgroundColor = "var(--button-primary)";`
+- #### questions.js
+    - div.center -> div.wrapper_border.flex_container.centercenter
+    - div.item -> section
+    - p+input -> label+input
+    - div.username -> form
+        - don't see a reason for the div.username to exist in the JavaScript, should be able to safely be replaced with a form element
 - #### A000-A000-1A14-0.json
     - span.qname -> b.highlight1
     - div.code -> section.code
@@ -73,6 +79,16 @@ I've tried to leave the look of the website untouched so far with one exception-
     - span.code -> code
 
 ## **NEXT STEPS**
-1. I need to finish writing "patch notes" for the rest of the pages I've done then test/update a few more pages/questions.
-2. Once we have a comprehensive list of all the tags, classes, and IDs we want to change (e.g. replacing all occurences of em with b.highlight2), we might be able to update all the questions with a python script.
-3. If we can fit it within the scope of the project, we can start some basic styling and add more responsiveness
+1. I need to finish writing "patch notes" for the rest of the pages we in our frontend repo.
+    1. confirmation.js
+    2. course-enrollments.js
+    3. course.js
+    4. enroll.js
+    5. login.js
+        - login.js - error
+    6. metric.js
+    7. metrics.js
+    8. recommendations.js
+2. Create a version "1.5" css file that is compatible with the new styling as well as the old styling, then replace the existing css files with this one.
+3. Maybe finish writing a revised css scheme for other questions IF given the go-ahead as this is starting to affect the backend which is not in the original scope of our project (optional step.)
+4. If time permits, we can start some basic styling and add more responsiveness
