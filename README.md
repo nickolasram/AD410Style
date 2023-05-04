@@ -61,12 +61,18 @@ I've tried to leave the look of the website untouched so far with one exception-
     - replace occurances of `.style.backgroundColor = "green";` with `.style.backgroundColor = "var(--highlight-tertiary)";`
     - replace occurances of `.style.backgroundColor = "red";` with `.style.backgroundColor = "var(--highlight-primary)";`
     - replace occurances of `.style.backgroundColor = "white";` with `.style.backgroundColor = "var(--button-primary)";`
-- #### questions.js
+- #### create.js
     - div.center -> div.wrapper_border.flex_container.centercenter
     - div.item -> section
     - p+input -> label+input
     - div.username -> form
-        - don't see a reason for the div.username to exist in the JavaScript, should be able to safely be replaced with a form element
+    - div#feedback -> div#feedback.feedback_neg
+- #### login.js
+    - div.center -> div.wrapper_border.flex_container.centercenter
+    - div.item -> section
+    - p+input -> label+input
+    - div.username -> form
+    - div#feedback -> div#feedback.feedback_neg
 - #### A000-A000-1A14-0.json
     - span.qname -> b.highlight1
     - div.code -> section.code
@@ -84,12 +90,18 @@ I've tried to leave the look of the website untouched so far with one exception-
     2. course-enrollments.js
     3. course.js
     4. enroll.js
+<<<<<<< Updated upstream
     5. login.js
         - login.js - error
     6. metric.js
     7. metrics.js
     8. recommendations.js
     9. about.js
+=======
+    5. metric.js
+    6. metrics.js
+    7. recommendations.js
+>>>>>>> Stashed changes
 2. Create a version "1.5" css file that is compatible with the new styling as well as the old styling, then replace the existing css files with this one.
 3. Maybe finish writing a revised css scheme for other questions IF given the go-ahead as this is starting to affect the backend which is not in the original scope of our project (optional step.)
 4. If time permits, we can start some basic styling and add more responsiveness

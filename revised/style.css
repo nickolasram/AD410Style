@@ -2,6 +2,7 @@
     /* Typography */
     --heading: green;
     --text-standard: 1rem;
+    --feedback-negative: red;
     /* general styling */
     --body-back: #f0f0f0;
     --content-back: white;
@@ -47,8 +48,8 @@ code {
 button {
     font-size: 1rem;
 }
-#feedback {
-    color: var(--highlight-primary);
+.feedback_neg {
+    color: var(--feedback-negative);
 }
 .text-block{
     text-align: left;
