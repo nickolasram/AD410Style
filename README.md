@@ -66,6 +66,7 @@ I've tried to leave the look of the website untouched so far with one exception-
     - div.item -> section
     - p+input -> label+input
     - div.username -> form
+        - don't see a need for the div.username in the JS, but if there is we can just place the form tag inside it.
     - div#feedback -> div#feedback.feedback_neg
 - #### login.js
     - div.center -> div.wrapper_border.flex_container.centercenter
@@ -90,18 +91,10 @@ I've tried to leave the look of the website untouched so far with one exception-
     2. course-enrollments.js
     3. course.js
     4. enroll.js
-<<<<<<< Updated upstream
-    5. login.js
-        - login.js - error
-    6. metric.js
-    7. metrics.js
-    8. recommendations.js
-    9. about.js
-=======
     5. metric.js
     6. metrics.js
     7. recommendations.js
->>>>>>> Stashed changes
+    8. about.js
 2. Create a version "1.5" css file that is compatible with the new styling as well as the old styling, then replace the existing css files with this one.
 3. Maybe finish writing a revised css scheme for other questions IF given the go-ahead as this is starting to affect the backend which is not in the original scope of our project (optional step.)
 4. If time permits, we can start some basic styling and add more responsiveness
