@@ -91,24 +91,24 @@ I've tried to leave the look of the website relatively untouched so far with one
     - p+input -> label+input
     - div.username -> form
     - div#feedback -> div#feedback.feedback_neg
-- ## about.js
+- #### about.js
     - div.center -> div.wrapper_border.flex_container.centercenter
     - div#welcome -> div.banner.border_primary
-- ## confirmation.js
+- #### confirmation.js
     - div.center -> div.wrapper_border.flex_container.centercenter
     - div#welcome -> div.banner.border_primary
     - wrap the buttons with a div.item
-- ## enroll.js
+- #### enroll.js
     - div.center -> div.wrapper_border.flex_container.centercenter
     - wrap the buttons with a div.item
     - wrap form in form tag
     - replaces occurences of p in form to label
     - delete occurences of div.dropdown
-- ## metrics.js
+- #### metrics.js
     - div.center -> div.wrapper_border.flex_container.centercenter
     - div#welcome -> div.banner.border_primary
     - div.course -> div.course.border_primary
-- ## recommendations.js
+- #### recommendations.js
     - div.center -> div.wrapper_border.flex_container.centercenter
     - div#welcome -> div.banner.border_primary
     - delete br tags
