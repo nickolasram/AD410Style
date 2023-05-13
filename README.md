@@ -41,7 +41,7 @@ Throughout this document I use emmet notation to define html/jsx elements. Here 
 
 ### **Implementation**
 
-Below is a list of the changes I recommend under the **Pages** heading. Above, in the *revised* file you can see the html for individual pages to get a better understanding of the changes I recommend and you can compare it to the old html in the *formatted* folder. We can go through each page, updating the html/jsx in the north seattle branch of the frontend repository and I'll upload a single css file that can replace the existing 2 css files. Then we have to *link* to that file in the react files rather than than the 2 files they currently use. 
+Below is a list of the changes I recommend under the **Pages** heading. Above, in the *revised* folder you can see the html for individual pages to get a better understanding of the changes I recommend and you can compare it to the old html in the *formatted* folder. We can go through each page, updating the html/jsx in the north seattle branch of the frontend repository and I'll upload a single css file that can replace the existing 2 css files. Then we have to *link* to that file in the react files rather than than the 2 files they currently use. 
 
 ### **CSS**
 The first thing you'll notice if you look at the revised css is that I inserted a lot of variables at the top. This is so elements that share the same background color, font size, margin width, etc. can all be changed by simply changing the global variables instead of having to change each css selector's rules.
