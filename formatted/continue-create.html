@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://atcsed.us-west-2.elasticbeanstalk.com/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://atcsed.us-west-2.elasticbeanstalk.com/logo192.png">
+    <link rel="manifest" href="http://atcsed.us-west-2.elasticbeanstalk.com/manifest.json">
+    <title>Cultural CS Bytes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div id="root">
+        <div class="Center">
+            <h1>Create Account</h1>
+            <div class="username">
+                <div class="item">
+                    <p>Nickname:</p>
+                    <input id="nickname" type="text" name="nickname" value="">
+                </div>
+                <div class="item">
+                    <p>Email:</p>
+                    <input id="email" type="text" name="email" value="">
+                </div>
+                <div class="item">
+                    <p>Age:</p>
+                    <div class="dropdown">
+                        <select name="age" id="age">
+                            <option value="less-than-8">Younger than 8</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="older-than-21">Older than 21</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>Zip Code:</p>
+                    <input id="zipcode" type="text" name="zipcode" value="0">
+                </div>
+                <div class="item">
+                    <p>Initial Question Set:</p>
+                    <div class="dropdown">
+                        <select name="sets" id="sets">
+                            <option value="cs_principle_basics">Computer Science Principle Basics</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <button>Cancel</button>
+                <button>Continue</button>
+            </div>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+</body></html>

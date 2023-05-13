@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Cultural CS Bytes</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+ </head>
+  <body>
+    <div id="root">
+        <div class="wrapper_border centercenter flex_container">
+            <h1>Create Account</h1>
+                <form action="">
+                    <section>
+                        <label for="nickname">Nickname:</label>
+                        <input id="nickname" type="text" name="nickname" value="">
+                    </section>
+                    <section>
+                        <label for="email">Email:</label>
+                        <input id="email" type="text" name="email" value="">
+                    </section>
+                    <section>
+                        <label for="age">Age:</label>
+                        <select name="age" id="age">
+                            <option value="less-than-8">Younger than 8</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="older-than-21">Older than 21</option>
+                        </select>
+                    </section>
+                    <section>
+                        <label for="zipcode">Zip Code:</label>
+                        <input id="zipcode" type="text" name="zipcode" value="0">
+                    </section>
+                    <section>
+                        <label for="sets">Initial Question Set:</label>
+                        <select name="sets" id="sets">
+                            <option value="cs_principle_basics">Computer Science Principle Basics</option>
+                        </select>
+                    </section>
+                </form>                
+            <div>
+                <button>Cancel</button>
+                <button>Continue</button>
+            </div>
+            <p id="feedback" class="feedback_neg"></p>
+        </div>
+    </div>
+</body>
+</html>

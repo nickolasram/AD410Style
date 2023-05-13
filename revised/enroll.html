@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://atcsed.us-west-2.elasticbeanstalk.com/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://atcsed.us-west-2.elasticbeanstalk.com/logo192.png">
+    <link rel="manifest" href="http://atcsed.us-west-2.elasticbeanstalk.com/manifest.json">
+    <title>Cultural CS Bytes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div id="root">
+        <div class="wrapper_border flex_container centercenter">
+            <h1>Initial Session</h1>
+            <form action="">
+                <div class="item">
+                    <label>Question Set:</label>
+                    <select name="name" id="name">
+                        <option value="Computer Science Principles Basics 5/13/2023">Computer Science Principles Basics 5/13/2023</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label>Preferred Culture:</label>
+                    <select name="cultures" id="cultures">
+                        <option value="Default Culture">Default Culture</option>
+                        <option value="Black">Black</option>
+                        <option value="Hispanic-Latinx">Hispanic-Latinx</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label>Difficulty:</label>
+                    <select name="difficulties" id="difficulties">
+                        <option value="Medium">Medium</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label>Additional Cultures:</label>
+                    <select multiple="" name="additionalCultures" id="additionalCultures">
+                        <option value="Default Culture">Default Culture</option>
+                        <option value="Black">Black</option>
+                        <option value="Hispanic-Latinx">Hispanic-Latinx</option>
+                    </select>
+                </div>
+            </form>
+            <div class="item">
+                <button id="login">Cancel</button>
+                <button id="createAccount">Ok</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

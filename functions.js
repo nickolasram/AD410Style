@@ -1,4 +1,5 @@
-const pages = ['home', 'create', 'login', 'login-error', 'A000-A000-1A14-0'];
+const pages = ['home', 'create', 'continue-create', 'login', 'login-error', 'enroll', 'course-enrollments', 
+'confirmation', 'metrics', 'about', 'recommendations' /*'A000-A000-1A14-0'*/];
 const folders = ['formatted','raw', 'revised']
 const $ = x => {
     return document.getElementById(x);

@@ -15,6 +15,10 @@
     --highlight-tertiary: green;
     --code-back: lightyellow;
     --flex-gap: 2rem;
+    --button-padding-block: .625rem;
+    --button-padding-inline: 1.25rem;
+    --button-height: 1.625rem;
+    /* --button-height: calc(var(--text-standard) + var(--button-padding-block)); */
 }
 
 * {
@@ -46,7 +50,7 @@ code {
     background-color: var(--code-back);
 }
 button {
-    font-size: 1rem;
+    font-size: var(--text-standard);
 }
 .feedback_neg {
     color: var(--feedback-negative);
@@ -101,8 +105,8 @@ img {
     max-width: 100%;
 }
 button {
-    padding-inline: 1.25em;
-    padding-block: .625em;
+    padding-inline: var(--button-padding-inline);
+    padding-block: var(--button-padding-block);
     margin: .625rem;
 }
 form{
@@ -144,6 +148,11 @@ input{
     display: flex;
     flex-direction: column;
 }
+.split{
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
 .centercenter{
     justify-content: center;
     align-items: center;
@@ -151,12 +160,19 @@ input{
 .banner {
     padding: 40px;
     text-align: center;
+    min-width: 80%;
+}
+.text_narrow {
+    text-align: center;
+    min-width: 40%;
+    max-width: 80%;
 }
 .border_primary{
     border: var(--border-width) solid var(--accent-outline);
 }
 .item {
     display: flex;
+    gap: 1.5rem;
     justify-content: center;
 }
 p, .image,
@@ -172,18 +188,23 @@ p, .image,
 .image img{
     vertical-align: middle;
 }
-.dropdown{
+/* .dropdown{
     margin-right: 20px;
     margin-top: 27px;
     margin-left: 20px;
     margin-bottom: 28px;
-}
+} */
 .course {
     display: flex;
-    border-style: solid;
+    padding: 1em;
+    line-height: var(--button-height);
+    text-align: center;
+    margin-top: var(--standard-margin);
 }
 .course p {
     margin-left: 20px;
+    margin-top: 0;
+    vertical-align: middle;
 }
 /* #Questions {
     margin: 20px;
