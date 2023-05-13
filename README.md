@@ -33,9 +33,9 @@ Throughout this document I use emmet notation to define html/jsx elements. Here 
     - *html*: \<div> \<p\> ... \</p\> \</div\>  
     - *jsx*: \<div> \<p\> ... \</p\> \</div\> 
 - sibling example (one element following another)
-    -*emmet notation*: p+section  
-    *html*: \<p\> ... \</p\> \<section\> ... \</section\>  
-    *jsx*: \<p\> ... \</p\> \<section\> ... \</section\>  
+    - *emmet notation*: p+section  
+    - *html*: \<p\> ... \</p\> \<section\> ... \</section\>  
+    - *jsx*: \<p\> ... \</p\> \<section\> ... \</section\>  
 
 ## **CHANGES**
 
