@@ -41,7 +41,7 @@ Throughout this document I use emmet notation to define html/jsx elements. Here 
 
 ### **Implementation**
 
-
+Below is a list of the changes I recommend under the **Pages** heading. Above, in the *revised* file you can see the html for individual pages to get a better understanding of the changes I recommend and you can compare it to the old html in the *formatted* folder. We can go through each page, updating the html/jsx in the north seattle branch of the frontend repository and I'll upload a single css file that can replace the existing 2 css files. Then we have to *link* to that file in the react files rather than than the 2 files they currently use. 
 
 ### **CSS**
 The first thing you'll notice if you look at the revised css is that I inserted a lot of variables at the top. This is so elements that share the same background color, font size, margin width, etc. can all be changed by simply changing the global variables instead of having to change each css selector's rules.
@@ -49,7 +49,7 @@ Using global variables should still work if we change something like `document.g
 
 I added a media query at the bottom of the css file. This is just the start of making it a responsive design.
 
-I've tried to leave the look of the website untouched so far with one exception-- I've placed a wrapper div on every page.
+I've tried to leave the look of the website relatively untouched so far with one exception-- I've placed a wrapper to narrow the content on every page.
 
 ### **Pages**
 *an arrow (->) is shorthand for "update to/replace with"*
@@ -119,13 +119,12 @@ I've tried to leave the look of the website untouched so far with one exception-
         - this is specifically for the congratulations message
 
 ## **NEXT STEPS**
-1. I need to finish writing "patch notes" for the rest of the pages we in our frontend repo.
-    1. recommendations.js
-2. Create a version "1.5" css file that is compatible with the new styling as well as the old styling, then replace the existing css files with this one.
-3. Maybe finish writing a revised css scheme for other questions IF given the go-ahead as this is starting to affect the backend which is not in the original scope of our project (optional step.)
-4. If time permits, we can start some basic styling and add more responsiveness
-
-
-next steps for the project:
-Refactor questions
+For the main website developers:    
+I'd recommend finding a different way to store the questions in the database/json rather than just storing it as html. I'd like to do this but it is not within the scope of our group project right now.  
 I tried to make my css as flexible a system, but it may be a little complicated too (lots of vars and calcs). I figure as the style of the website is further developed and codified, the css can be simplified.
+
+For the group:  
+If anyone wants to do some styling from here, go for it.
+
+For me:  
+I'd like to work on some React/js since that is the point of this class after all.
