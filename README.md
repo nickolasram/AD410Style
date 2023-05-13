@@ -11,35 +11,37 @@
 
 In the repo are 3 folders:  
 **Raw**: This is the raw html/css data delivered to your browser upon loading a page from the demo site. I simply saved the pages with ctrl+s and copied the files here.  
-**Formatted**: This is the original html/css data but I cleaned it up for readability so you can compare the original to the revised versions. I also cut the css from these pages and put it in a separate file for readability's sake.  
+**Formatted**: This is the **original** html/css data but I cleaned it up for readability so you can compare the original to the revised versions. I also cut the css from these pages and put it in a separate file for readability's sake.  
 **Revised**: This is what the html/css should look like after my suggested changes are made. This is formatted like the *Formatted* files for easy comparison, but obviously it will resemble the *Raw* files in practice.
+
+During all of this, some pages ended up looking slightly differently. Visit [this link](https://nickolasram.github.io/AD410Style/) so you can see how the pages look with the old and new CSS.
 
 
 ### **Emmet Notation**
 
-Throughout this document I use emmet notation to denote html/jsx elements. Here is a brief demo if you're not familiar with it:
-
-*emmet notation (id example)*: div\#root.blue  
-*html*: \<div id="root" class="blue"\> ... \</div\>  
-*jsx*: \<div id="root" className="blue"\> ... \</div\>  
-
-*emmet notation (class example)*: p.dem.slash.ci2  
-*html*: \<p class="dem slash ci2"\> ... \</p\>  
-*jsx*: \<p  className="dem slash ci2"\> ... \</p\>  
-
-*emmet notation (child example)*: div>p  
-*html*: \<div> \<p\> ... \</p\> \</div\>  
-*jsx*: \<div> \<p\> ... \</p\> \</div\> 
-
-*emmet notation (sibling example)*: div>p+section  
-*html*: \<div> \<p\> ... \</p\> \<section\> ... \</section\> \</div\>  
-*jsx*: \<div> \<p\> ... \</p\> \<section\> ... \</section\> \</div\>  
+Throughout this document I use emmet notation to define html/jsx elements. Here is a brief demo if you're not familiar with it:
+- id example
+    - *emmet notation*: div\#root.blue  
+    - *html*: \<div id="root" class="blue"\> ... \</div\>  
+    - *jsx*: \<div id="root" className="blue"\> ... \</div\>  
+- class example 
+    - *emmet notation*: p.dem.slash.ci2  
+    - *html*: \<p class="dem slash ci2"\> ... \</p\>  
+    - *jsx*: \<p  className="dem slash ci2"\> ... \</p\>  
+- child example (one element nested in another)
+    - *emmet notation*: div>p  
+    - *html*: \<div> \<p\> ... \</p\> \</div\>  
+    - *jsx*: \<div> \<p\> ... \</p\> \</div\> 
+-sibling example (one element following another)
+    -*emmet notation*: p+section  
+    *html*: \<p\> ... \</p\> \<section\> ... \</section\>  
+    *jsx*: \<p\> ... \</p\> \<section\> ... \</section\>  
 
 ## **CHANGES**
 
 ### **Implementation**
 
-Some changes will involve editing the jsx within the .js files in the src/pages and src/pages/onboarding folders. Other changes will have to be implemented in the back end. For example, if you go to the [main CulturalCSBytes Repo](https://github.com/lgtanimoto/CulturalCSBytes), within the [/content/A000/ folder](https://github.com/lgtanimoto/CulturalCSBytes/tree/main/content/A000), you'll find the json for all the questions. In [this specific file](https://github.com/lgtanimoto/CulturalCSBytes/blob/main/content/A000/A000/A000-A000-1D06-0.json), you'll find a span.qname element; I would suggest changing that to a b.highlight1 element.
+
 
 ### **CSS**
 The first thing you'll notice if you look at the revised css is that I inserted a lot of variables at the top. This is so elements that share the same background color, font size, margin width, etc. can all be changed by simply changing the global variables instead of having to change each css selector's rules.
